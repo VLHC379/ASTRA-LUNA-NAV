@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "luna-nav"
+version = "1.0.0"
+description = "LUNA NAV — lunar landing site navigator (NASA Space Apps Challenge 2026)"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "rasterio>=1.3",
+    "pillow>=10.0",
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.27",
+    "pydantic>=2.6",
+    "spiceypy>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "httpx>=0.27", "playwright>=1.40"]
+
+[tool.setuptools.packages.find]
+include = ["lunanav*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
