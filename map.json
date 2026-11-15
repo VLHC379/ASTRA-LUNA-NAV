@@ -1,0 +1,10 @@
+{
+  "bounds": {
+    "left": -304000.0,
+    "right": 304000.0,
+    "bottom": -304000.0,
+    "top": 304000.0
+  },
+  "size": 2048,
+  "note": "LOLA LDEM_80S_80M, 320 m/px render, polar stereographic"
+}
